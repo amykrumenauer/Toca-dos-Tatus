@@ -7,7 +7,9 @@ Desenvolvido como projeto pessoal/extensionista, com foco em UX/UI e responsivid
 
 ## Descrição do Projeto
 
-O **Tocados Tatus** é um site que conecta pessoas que querem adotar pets com informações sobre os animais disponíveis e atividades de voluntariado.  
+https://sitetocadostatus.vercel.app/
+
+O **Toca dos Tatus** é um site que conecta pessoas que querem adotar pets com informações sobre os animais disponíveis e atividades de voluntariado.  
 O site possui seções como:
 
 - **Home/Hero**: Apresentação do projeto e chamada para ação.  

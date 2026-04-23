@@ -53,7 +53,6 @@ O projeto é **totalmente responsivo**, funcionando em desktop e mobile.
 - Imagens de fundo posicionadas com `absolute` e `z-index` para profundidade.  
 - Links de navegação suave para seções da página.  
 
-Atualizando CI
 ---
 
 

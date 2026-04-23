@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sitetocadostatus.vercel.app/sitemap.xml

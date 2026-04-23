@@ -19,8 +19,9 @@ jobs:
 
       - run: npm run test
 
-      - name: Notificar Discord
-        uses: Ilshidur/action-discord@master
-        with:
-          webhook: ${{ secrets.DISCORD_WEBHOOK }}
-          message: "CI rodou com sucesso 🚀"
+      - name: Notificar Telegram
+        if: always()
+        run: |
+          curl -s -X POST https://api.telegram.org/bot${{ secrets.TELEGRAM_TOKEN }}/sendMessage \
+          -d chat_id=${{ secrets.TELEGRAM_CHAT_ID }} \
+          -d text="CI executado com sucesso 🚀"

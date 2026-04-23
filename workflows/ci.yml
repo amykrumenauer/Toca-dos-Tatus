@@ -2,29 +2,25 @@ name: Testes CI
 
 on:
   pull_request:
+  push:
 
 jobs:
   test:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Baixar código
-        uses: actions/checkout@v3
+      - uses: actions/checkout@v3
 
-      - name: Instalar Node
-        uses: actions/setup-node@v3
+      - uses: actions/setup-node@v3
         with:
           node-version: 18
 
-      - name: Instalar dependências
-        run: npm install
+      - run: npm install
 
-      - name: Rodar testes
-        run: npm run test
+      - run: npm run test
 
       - name: Notificar Discord
-        if: always()
-        run: |
-          curl -H "Content-Type: application/json" \
-          -d "{\"content\": \"CI executado com sucesso 🚀\"}" \
-          ${{ secrets.DISCORD_WEBHOOK }}
+        uses: Ilshidur/action-discord@master
+        with:
+          webhook: ${{ secrets.DISCORD_WEBHOOK }}
+          message: "CI rodou com sucesso 🚀"

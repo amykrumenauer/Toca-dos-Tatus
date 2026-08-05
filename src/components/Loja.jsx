@@ -17,7 +17,7 @@ export default function Loja() {
       <img src={lojinha} alt="Lojinha" className="loja-img" />
 
       <a
-        href="https://lojinhadatocadostatus.appsimpliza.com.br"
+        href="https://app.cardapioweb.com/toca_dos_tatus"
         target="_blank"
         rel="noopener noreferrer"
         className="loja-btn"

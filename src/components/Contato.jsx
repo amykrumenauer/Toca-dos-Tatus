@@ -17,15 +17,16 @@ export default function Contato() {
         <div className="contato-conteudo">
 
           {/* MAPA */}
-          <div className="contato-mapa">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3602.774563475271!2d-49.283280624610086!3d-25.445799377551722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce53428a8f78b%3A0x12fc73c4f6500a76!2sToca%20dos%20Tatus!5e0!3m2!1spt-BR!2sbr!4v1763395654356!5m2!1spt-BR!2sbr"
-              allowFullScreen=""
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              title="Mapa Toca dos Tatus"
-            ></iframe>
-          </div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3602.6325969876575!2d-49.27603342446863!3d-25.450543933705188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce53428a8f78b%3A0x12fc73c4f6500a76!2sToca%20dos%20Tatus!5e0!3m2!1spt-BR!2sbr!4v1785936405323!5m2!1spt-BR!2sbr"
+            width="100%"
+            height="400"
+            style={{ border: 0 }}
+            allowFullScreen
+            loading="lazy"
+            referrerPolicy="strict-origin-when-cross-origin"
+            title="Mapa Toca dos Tatus"
+          />
 
           {/* REDES */}
           <div className="contato-redes">
